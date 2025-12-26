@@ -10,8 +10,10 @@ const mainstyles = StyleSheet.create({
         flex: 1,
         marginTop: 50,
         padding:20,
+        text:{
+            fontSize:30,
+        },
     },
-    
 })
 
 export default mainstyles;

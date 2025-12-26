@@ -4,7 +4,9 @@ import mainstyles from '../styles/MainStyles';
 import { Ionicons } from '@expo/vector-icons';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useState, useEffect } from 'react'
-
+import { API_URL } from '../config';
+import  Error  from '../components/Error'
+import  Loading  from '../components/Loading'
 
 export default function SettingsScreen() {
   const [userData, setUserData] = useState(null);
@@ -21,7 +23,7 @@ export default function SettingsScreen() {
         setError("No auth token")
         return;
        }
-      const response = await fetch('http://192.168.0.161:8000/v1/sessions/', {
+      const response = await fetch(API_URL + '/v1/sessions/', {
           method: 'GET',
           headers: {
               'Content-Type': 'application/json',
@@ -42,19 +44,12 @@ export default function SettingsScreen() {
   }
   if (loading) {
     return (
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <ActivityIndicator size="large" />
-      </View>
+      <Loading/>
     );
   }
   if (error) {
     return (
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Text style={{ color: 'red' }}>{error}</Text>
-        <Pressable onPress={handleData} style={{ marginTop: 10, padding: 10, backgroundColor: '#007AFF', borderRadius: 5 }}>
-          <Text style={{ color: 'white' }}>Repeat</Text>
-        </Pressable>
-      </View>
+      <Error/>
     );
   }
 
@@ -62,7 +57,7 @@ export default function SettingsScreen() {
   return (
     <>
       <View style={ mainstyles.header }>
-        <Text style={{ fontSize: 30 }}>Settings</Text>
+        <Text style={ mainstyles.header.text }>Settings</Text>
       </View>
       <View style={styles.profileContainer}>
         <View style={styles.avatarContainer}>

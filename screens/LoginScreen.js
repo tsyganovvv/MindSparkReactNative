@@ -9,6 +9,7 @@ import {
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import styles from '../styles/LoginStyle';
 import { useState } from 'react';
+import { API_URL } from '../config';
 
 export default function LoginScreen({ navigation }) {
     const [email, setEmail] = useState('');
@@ -24,7 +25,7 @@ export default function LoginScreen({ navigation }) {
         setLoading(true);
         
         try {
-            const response = await fetch('http://192.168.0.161:8000/v1/sessions/', {
+            const response = await fetch(API_URL + '/v1/sessions/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
