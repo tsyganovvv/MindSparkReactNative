@@ -48,7 +48,7 @@ export default function HomeScreen() {
             <Text style={styles.chatTime}>10:30</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.newChatButton} onPress={() => {}}>
-            <Text style={styles.newChatText}>+ New Conversation</Text>
+            <Text style={styles.newChatText}>New Chat</Text>
           </TouchableOpacity>
         </View>
         {/* Nutrition */}
@@ -58,7 +58,7 @@ export default function HomeScreen() {
             <Text style={styles.nutritionPlaceholderText}>Meals</Text>
           </View>
           <TouchableOpacity style={styles.nutritionButton} onPress={() => {}}>
-            <Text style={styles.nutritionButtonText}>+ Add Food Entry</Text>
+            <Text style={styles.nutritionButtonText}>Food Entry</Text>
           </TouchableOpacity>
         </View>
         {/* Goals блок */}
@@ -71,7 +71,7 @@ export default function HomeScreen() {
             <Text style={styles.goalText}>10,000 steps</Text>
           </View>
           <TouchableOpacity style={styles.addGoalButton} onPress={() => {}}>
-            <Text style={styles.addGoalText}>+ Add New Goal</Text>
+            <Text style={styles.addGoalText}>New Goal</Text>
           </TouchableOpacity>
         </View>
       </ScrollView>

@@ -9,14 +9,14 @@ const styles = StyleSheet.create({
   // "Statistic"
   statisticBlock: {
     backgroundColor: "#ffffff",
-    borderRadius: 12,
     padding: 16,
-    marginBottom: 16,
     shadowColor: "#000",
     shadowOffset: { width: 0, height: 1 },
     shadowOpacity: 0.05,
     shadowRadius: 2,
     elevation: 2,
+    margin:10,
+    borderRadius: 20,
   },
   statisticTitle: {
     fontSize: 18,
@@ -59,9 +59,9 @@ const styles = StyleSheet.create({
   // "Chats"
   chatsBlock: {
     backgroundColor: "#ffffff",
-    borderRadius: 12,
     padding: 16,
-    marginBottom: 16,
+    margin: 10,
+    borderRadius: 20,
   },
   chatsTitle: {
     fontSize: 18,
@@ -112,7 +112,7 @@ const styles = StyleSheet.create({
     color: "#adb5bd",
   },
   newChatButton: {
-    backgroundColor: "#40c057",
+    backgroundColor: "#4a90e2",
     padding: 12,
     borderRadius: 8,
     alignItems: "center",
@@ -126,9 +126,9 @@ const styles = StyleSheet.create({
   // "Nutrition"
   nutritionBlock: {
     backgroundColor: "#ffffff",
-    borderRadius: 12,
     padding: 16,
-    marginBottom: 16,
+    margin: 10,
+    borderRadius: 20,
   },
   nutritionTitle: {
     fontSize: 18,
@@ -148,7 +148,7 @@ const styles = StyleSheet.create({
     color: "#339af0",
   },
   nutritionButton: {
-    backgroundColor: "#339af0",
+    backgroundColor: "#4a90e2",
     padding: 12,
     borderRadius: 8,
     alignItems: "center",
@@ -162,9 +162,9 @@ const styles = StyleSheet.create({
   // "Goals"
   goalsBlock: {
     backgroundColor: "#ffffff",
-    borderRadius: 12,
     padding: 16,
-    marginBottom: 16,
+    margin: 10,
+    borderRadius: 20,
   },
   goalsTitle: {
     fontSize: 18,
@@ -173,7 +173,7 @@ const styles = StyleSheet.create({
     marginBottom: 12,
   },
   goalItem: {
-    backgroundColor: "#fff4e6",
+    backgroundColor: "#e7f5ff",
     padding: 12,
     borderRadius: 8,
     marginBottom: 8,
@@ -185,13 +185,13 @@ const styles = StyleSheet.create({
     height: 20,
     borderRadius: 4,
     borderWidth: 2,
-    borderColor: "#ff922b",
+    borderColor: "#4a90e2",
     marginRight: 12,
     justifyContent: "center",
     alignItems: "center",
   },
   goalCheckboxCompleted: {
-    backgroundColor: "#ff922b",
+    backgroundColor: "#ffffff",
   },
   goalCheckmark: {
     color: "#ffffff",
@@ -201,11 +201,11 @@ const styles = StyleSheet.create({
   goalText: {
     flex: 1,
     fontSize: 14,
-    color: "#e67700",
+    color: "#4a90e2",
   },
   addGoalButton: {
     borderWidth: 1,
-    borderColor: "#ffa94d",
+    borderColor: "#4a90e2",
     borderStyle: "dashed",
     padding: 12,
     borderRadius: 8,
@@ -213,7 +213,7 @@ const styles = StyleSheet.create({
     marginTop: 8,
   },
   addGoalText: {
-    color: "#ff922b",
+    color: "#4a90e2",
   },
 });
 
